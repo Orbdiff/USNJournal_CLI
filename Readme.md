@@ -2,6 +2,8 @@
 
 **Journal_CLI** was created primarily to help other tools use usnjrnl easily. It can detect **replacements (type, copy, explorer)** and **filtering after logon time**, etc.
 
+The replacement detector may show other events. Simply check [usn_patterns](https://github.com/Orbdiff/USNJournal_CLI/blob/main/usnjrnl/usn_patterns.h) and you can verify or ensure that only those reasons are shown in your tool.
+
 ## Use
 
 ```cpp
@@ -23,4 +25,5 @@ Options:
 --only-replace : Show ONLY replace results (no full journal)
 -f <formats> : Output format(s): txt;csv;json
 -o <files> : Output file name(s)
+
 -c : Print results to console
